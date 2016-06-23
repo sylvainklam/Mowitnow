@@ -1,4 +1,4 @@
-package com.mowitnow.grid;
+package com.mowitnow.lawn;
 
 import com.mowitnow.constants.Orientation;
 

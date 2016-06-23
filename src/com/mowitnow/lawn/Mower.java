@@ -1,9 +1,7 @@
-package com.mowitnow;
+package com.mowitnow.lawn;
 
 import com.mowitnow.constants.Instruction;
 import com.mowitnow.constants.Orientation;
-import com.mowitnow.grid.Coordinate;
-import com.mowitnow.grid.Lawn;
 
 /**
  * Objet tondeuse

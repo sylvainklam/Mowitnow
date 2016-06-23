@@ -1,6 +1,6 @@
 package com.mowitnow;
 
-import com.mowitnow.grid.Lawn;
+import com.mowitnow.lawn.Lawn;
 
 public class Mowitnow {
 
