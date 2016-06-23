@@ -2,6 +2,14 @@ package com.mowitnow.grid;
 
 import com.mowitnow.constants.Orientation;
 
+/**
+ * Objet Coordinate
+ * 
+ * Position de la tondeuse (x,y,orientation)
+ * 
+ * @author sylva
+ *
+ */
 public class Coordinate {
 
 	private int x;

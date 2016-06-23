@@ -1,10 +1,10 @@
 package com.mowitnow;
 
-import com.mowitnow.grid.Grid;
+import com.mowitnow.grid.Lawn;
 
 public class Mowitnow {
 
 	public static void main(String[] args) {
-		new Grid().launch();
+		new Lawn().startMowers();
 	}
 }

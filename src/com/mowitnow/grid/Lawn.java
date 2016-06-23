@@ -9,12 +9,12 @@ import com.mowitnow.Mower;
 import com.mowitnow.constants.Orientation;
 
 /**
- * Initialisation de l'environnement
+ * Création de la pelouse et initialisation de l'environnement
  * 
  * @author sylva
  *
  */
-public class Grid {
+public class Lawn {
 
 	/**
 	 * Dimensions maximales de la grille
@@ -59,14 +59,14 @@ public class Grid {
 			Coordinate origin = new Coordinate(Integer.parseInt(tabCoordOrigin[0]), Integer.parseInt(tabCoordOrigin[1]),
 					Orientation.valueOf(tabCoordOrigin[2]));
 			Mower mower = new Mower(j + 1, origin);
-			mower.move(listInstr.get(j));
+			mower.move(listInstr.get(j),this);
 		}
 	}
 
 	/**
 	 * Lancement du programme
 	 */
-	public void launch() {
+	public void startMowers() {
 		try {
 			InputStream ips = getClass().getResourceAsStream("/mowitnow.txt");
 			InputStreamReader ipsr = new InputStreamReader(ips);
