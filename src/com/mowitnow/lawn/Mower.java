@@ -45,7 +45,8 @@ public class Mower {
 			coordinate.setX(x);
 		if (y <= lawn.getyMax())
 			coordinate.setY(y);
-		coordinate.setOrientation(orientation);
+		if (x <= lawn.getxMax() && y <= lawn.getyMax())
+			coordinate.setOrientation(orientation);
 		setPosition(coordinate);
 	}
 
