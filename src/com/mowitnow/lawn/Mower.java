@@ -41,12 +41,11 @@ public class Mower {
 	 * @param orientation
 	 */
 	private void updatePosition(Coordinate coordinate, int x, int y, Orientation orientation, Lawn lawn) {
-		if (x <= lawn.getxMax())
+		if (x <= lawn.getxMax() && y <= lawn.getyMax()) {
 			coordinate.setX(x);
-		if (y <= lawn.getyMax())
 			coordinate.setY(y);
-		if (x <= lawn.getxMax() && y <= lawn.getyMax())
 			coordinate.setOrientation(orientation);
+		}
 		setPosition(coordinate);
 	}
 
